@@ -198,16 +198,48 @@ nav button{
     background-color: white;
     color: black;
 }
+.hamburger{
+    display: none;
+    font-size: 28px ;
+    cursor: pointer;
+}
 
 @media (max-width: 768px) {
+    .hamburger{
+        display: block;
+    }
     nav{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        
         padding: 5px;
     }
-    nav #part2{
+    nav #part2 {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        z-index: 99;
+        left: 10%;
+        width: 90%;
+        background-color: white;
+        padding: 20px;
+        border-top: 2px solid #ddd;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav #part2.active {
+        display: flex;
+    }
+
+    nav #part2 h4, nav #part2 button {
+        font-size: 18px;
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav button {
+        width: 100%;
     }
 
     .center{

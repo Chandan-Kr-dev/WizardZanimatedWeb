@@ -20,6 +20,7 @@
     <section class="section1">
       <nav>
         <h1><i class="ri-gemini-fill"></i>WizardZ</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <div id="part2">
           <h4>About us</h4>
           <h4>Services</h4>
@@ -126,6 +127,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      function toggleMenu() {
+          document.getElementById("part2").classList.toggle("active");
+      }
+  </script>
     <!-- <script src="script.js"></script> -->
   </body>
 </html>
