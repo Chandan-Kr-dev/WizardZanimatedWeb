@@ -8,9 +8,9 @@ html,body{
     height: 100%;
     width: 100%;
 }
-body{
+/* body{
     overflow-x: hidden;
-}
+} */
 
 
 
@@ -49,7 +49,7 @@ nav button{
     height: 70%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .center-part1{
@@ -326,7 +326,7 @@ nav button{
     }
     .center-part2 img{
         height: 300px;
-        margin-left: 10px;
+        margin-left: 0px;
         
     }
 
@@ -343,12 +343,13 @@ nav button{
         height: 35px;
     }
     
+    
     .section2 .services{
         
         padding: 4px 8px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 20px;
     
     }
